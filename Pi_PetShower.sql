@@ -6,6 +6,7 @@ create table Cliente (
 cli_id int (4) auto_increment,
 cli_nome varchar(30) not null,
 cli_rua varchar(30) not null,
+cli_dataNascimento varchar(10) not null,
 cli_cpf varchar(15) not null,
 cli_bairro varchar(15) not null,
 cli_cidade varchar(15) not null,

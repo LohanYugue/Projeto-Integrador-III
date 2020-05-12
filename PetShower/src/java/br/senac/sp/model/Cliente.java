@@ -5,6 +5,7 @@ public class Cliente {
     private int idCliente;
     private String cliNome;
     private String cliRua;
+    private String dataNascimento;
     private String cliCpf;
     private String cliBairro;
     private String cliCidade;
@@ -12,8 +13,9 @@ public class Cliente {
     private String cliCep;
     private String cliTelefone;
 
-    public Cliente(int idCliente, String cliNome, String cliRua, String cliCpf, String cliBairro, String cliCidade, String cliUf, String cliCep, String cliTelefone) {
+    public Cliente(String dataNascimento, int idCliente, String cliNome, String cliRua, String cliCpf, String cliBairro, String cliCidade, String cliUf, String cliCep, String cliTelefone) {
         this.idCliente = idCliente;
+        this.dataNascimento = dataNascimento;
         this.cliNome = cliNome;
         this.cliRua = cliRua;
         this.cliCpf = cliCpf;
