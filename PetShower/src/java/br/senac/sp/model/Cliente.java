@@ -4,7 +4,7 @@ public class Cliente {
 
     private int idCliente;
     private String cliNome;
-    private String cliEndereco;
+    private String cliRua;
     private String cliCpf;
     private String cliBairro;
     private String cliCidade;
@@ -12,7 +12,16 @@ public class Cliente {
     private String cliCep;
     private String cliTelefone;
 
-    public Cliente() {
+    public Cliente(int idCliente, String cliNome, String cliRua, String cliCpf, String cliBairro, String cliCidade, String cliUf, String cliCep, String cliTelefone) {
+        this.idCliente = idCliente;
+        this.cliNome = cliNome;
+        this.cliRua = cliRua;
+        this.cliCpf = cliCpf;
+        this.cliBairro = cliBairro;
+        this.cliCidade = cliCidade;
+        this.cliUf = cliUf;
+        this.cliCep = cliCep;
+        this.cliTelefone = cliTelefone;
     }
 
     public int getIdCliente() {
@@ -32,11 +41,11 @@ public class Cliente {
     }
 
     public String getCliEndereco() {
-        return cliEndereco;
+        return cliRua;
     }
 
     public void setCliEndereco(String cliEndereco) {
-        this.cliEndereco = cliEndereco;
+        this.cliRua = cliEndereco;
     }
 
     public String getCliCpf() {
@@ -89,7 +98,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente {" + "::idCliente = " + this.idCliente + "::cliNome = " + this.cliNome + "::cliEndereco = " + this.cliEndereco + "::cliBairro = " + this.cliBairro + "::cliCidade = " + this.cliCidade + "::cliUf = " + this.cliUf + "::cliCep = " + this.cliCep + "::cliTelefone = " + this.cliTelefone + "}";
+        return "Cliente {" + "::idCliente = " + this.idCliente + "::cliNome = " + this.cliNome + "::cliEndereco = " + this.cliRua + "::cliBairro = " + this.cliBairro + "::cliCidade = " + this.cliCidade + "::cliUf = " + this.cliUf + "::cliCep = " + this.cliCep + "::cliTelefone = " + this.cliTelefone + "}";
     }
 
 }

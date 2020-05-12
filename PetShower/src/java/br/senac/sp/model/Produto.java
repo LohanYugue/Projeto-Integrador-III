@@ -7,6 +7,13 @@ public class Produto {
     private Double proValor;
     private int proEstoque;
 
+    public Produto(int idProduto, String proNome, Double proValor, int proEstoque) {
+        this.idProduto = idProduto;
+        this.proNome = proNome;
+        this.proValor = proValor;
+        this.proEstoque = proEstoque;
+    }
+
     public int getIdProduto() {
         return idProduto;
     }
@@ -38,5 +45,5 @@ public class Produto {
     public void setProEstoque(int proEstoque) {
         this.proEstoque = proEstoque;
     }
-    
+
 }

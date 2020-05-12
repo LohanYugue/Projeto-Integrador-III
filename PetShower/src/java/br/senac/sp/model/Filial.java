@@ -6,6 +6,12 @@ public class Filial {
     private String cidade;
     private String telefone;
 
+    public Filial(int idFilial, String cidade, String telefone) {
+        this.idFilial = idFilial;
+        this.cidade = cidade;
+        this.telefone = telefone;
+    }
+
     public int getIdFilial() {
         return idFilial;
     }

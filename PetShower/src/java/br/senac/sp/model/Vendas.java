@@ -1,13 +1,20 @@
-
 package br.senac.sp.model;
 
 import java.util.Date;
 
 public class Vendas {
+
     private int idVenda;
     private Date dataVenda;
     private int idCliente;
     private double valorTotal;
+
+    public Vendas(int idVenda, Date dataVenda, int idCliente, double valorTotal) {
+        this.idVenda = idVenda;
+        this.dataVenda = dataVenda;
+        this.idCliente = idCliente;
+        this.valorTotal = valorTotal;
+    }
 
     public int getIdVenda() {
         return idVenda;
@@ -40,6 +47,5 @@ public class Vendas {
     public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
     }
-    
-    
+
 }
