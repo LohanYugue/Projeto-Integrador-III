@@ -1,17 +1,33 @@
 package br.senac.sp.model;
 
+import java.util.Date;
+
 public class Produto {
 
     private int idProduto;
     private String proNome;
     private Double proValor;
     private int proEstoque;
+    private Date proDataCadastro;
+    
+    public Produto(){
+        
+    }
 
-    public Produto(int idProduto, String proNome, Double proValor, int proEstoque) {
+    public Produto(int idProduto, String proNome, Double proValor, int proEstoque,Date proDataCadastro) {
         this.idProduto = idProduto;
         this.proNome = proNome;
         this.proValor = proValor;
         this.proEstoque = proEstoque;
+        this.proDataCadastro = proDataCadastro;
+    }
+
+    public Date getProDataCadastro() {
+        return proDataCadastro;
+    }
+
+    public void setProDataCadastro(Date proDataCadastro) {
+        this.proDataCadastro = proDataCadastro;
     }
 
     public int getIdProduto() {

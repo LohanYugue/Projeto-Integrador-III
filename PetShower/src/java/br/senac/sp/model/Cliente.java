@@ -1,11 +1,13 @@
 package br.senac.sp.model;
 
+import java.util.Date;
+
 public class Cliente {
 
     private int idCliente;
     private String cliNome;
-    private String cliRua;
-    private String dataNascimento;
+    private String cliEndereco;
+    private Date cliDataNasc;
     private String cliCpf;
     private String cliBairro;
     private String cliCidade;
@@ -13,17 +15,28 @@ public class Cliente {
     private String cliCep;
     private String cliTelefone;
 
-    public Cliente(String dataNascimento, int idCliente, String cliNome, String cliRua, String cliCpf, String cliBairro, String cliCidade, String cliUf, String cliCep, String cliTelefone) {
+    public Cliente(Date cliDataNasc, int idCliente, String cliNome, String cliEndereco, String cliCpf, String cliBairro, String cliCidade, String cliUf, String cliCep, String cliTelefone) {
         this.idCliente = idCliente;
-        this.dataNascimento = dataNascimento;
+        this.cliDataNasc = cliDataNasc;
         this.cliNome = cliNome;
-        this.cliRua = cliRua;
+        this.cliEndereco = cliEndereco;
         this.cliCpf = cliCpf;
         this.cliBairro = cliBairro;
         this.cliCidade = cliCidade;
         this.cliUf = cliUf;
         this.cliCep = cliCep;
         this.cliTelefone = cliTelefone;
+    }
+    public Cliente(){
+        
+    }
+
+    public Date getCliDataNasc() {
+        return cliDataNasc;
+    }
+
+    public void setCliDataNasc(Date cliDataNasc) {
+        this.cliDataNasc = cliDataNasc;
     }
 
     public int getIdCliente() {
@@ -43,11 +56,11 @@ public class Cliente {
     }
 
     public String getCliEndereco() {
-        return cliRua;
+        return cliEndereco;
     }
 
     public void setCliEndereco(String cliEndereco) {
-        this.cliRua = cliEndereco;
+        this.cliEndereco = cliEndereco;
     }
 
     public String getCliCpf() {
@@ -100,7 +113,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente {" + "::idCliente = " + this.idCliente + "::cliNome = " + this.cliNome + "::cliEndereco = " + this.cliRua + "::cliBairro = " + this.cliBairro + "::cliCidade = " + this.cliCidade + "::cliUf = " + this.cliUf + "::cliCep = " + this.cliCep + "::cliTelefone = " + this.cliTelefone + "}";
+        return "Cliente {" + "::idCliente = " + this.idCliente + "::cliNome = " + this.cliNome + "::cliEndereco = " + this.cliEndereco + "::cliBairro = " + this.cliBairro + "::cliCidade = " + this.cliCidade + "::cliUf = " + this.cliUf + "::cliCep = " + this.cliCep + "::cliTelefone = " + this.cliTelefone + "}";
     }
 
 }

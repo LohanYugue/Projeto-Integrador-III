@@ -10,12 +10,12 @@ public class ConnectionFactory {
 
     public static Connection getConnection() {
 
-        Connection conn = null;
+        Connection connection = null;
 
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             String url = "jdbc:mysql://localhost:3307/petshower";
-            conn = DriverManager.getConnection(url);
+            connection = DriverManager.getConnection(url);
             status = "Connection opened";
 
         } catch (SQLException e) {
@@ -25,13 +25,13 @@ public class ConnectionFactory {
         } catch (Exception e) {
             status = e.getMessage();
         }
-        return conn;
+        return connection;
     }
-    public static void CloseConnection(Connection conn) throws SQLException {
+    public static void CloseConnection(Connection connection) throws SQLException {
 
         try {
-            if (conn != null) {
-                conn.close();
+            if (connection != null) {
+                connection.close();
             }
 
         } catch (Exception ErrorSQL) {

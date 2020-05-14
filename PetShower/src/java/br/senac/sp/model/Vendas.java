@@ -8,6 +8,10 @@ public class Vendas {
     private Date dataVenda;
     private int idCliente;
     private double valorTotal;
+    
+    public Vendas(){
+        
+    }
 
     public Vendas(int idVenda, Date dataVenda, int idCliente, double valorTotal) {
         this.idVenda = idVenda;
