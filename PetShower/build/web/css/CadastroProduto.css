@@ -1,0 +1,17 @@
+body{
+	width: 95%;
+	max-width: 800px;
+	margin: auto;
+	background: url(background.jpg);
+	line-height: 5;
+	font-family: 'Balsamiq Sans'; 
+}
+main{
+	background: #fbf6f657;
+	border-radius: 5px; 
+}
+fieldset{
+	border-radius: 5px;
+}
+
+
