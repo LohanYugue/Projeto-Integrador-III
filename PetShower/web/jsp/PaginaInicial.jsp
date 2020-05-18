@@ -21,12 +21,15 @@
     <body>
         <!-- start header-->
         <header class="header">
-            <div class ="header-content">
-                <div class="logo">
+            <div class ="content">
+                <div class="logo fl-left " >
                     <a href="#">
-                        <img src="../img/background/logo_size.jpg" alt="LogoPetShower"/>
+                        <img src="../img/background/logo_size.png" alt="LogoPetShower"/>
                     </a>
                 </div>
+
+
+
                 <nav class="nav">
                     <ul>
                         <li><a href="#">Atendimento</a></li>
@@ -61,7 +64,7 @@
                 </div>
                 <div class="estatisticas-item">
                     <span>1,440</span>
-                    <p>Clientes satisfeitas</p>
+                    <p>Clientes satisfeitos</p>
                 </div>
             </div>
 

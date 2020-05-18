@@ -9,20 +9,31 @@ ol,ul{list-style:none;}
 a{text-decoration: none; color: inherit;}
 a:hover{color: #f9014d;}
 
-
-/*Header
--------------------------------*/
-.header{
-    display: none;
-}
-
-/*SECTION
+/*GERAIS
 -------------------------------*/
 .section{
     float: left;
     width: 100%;
 }
+.content{
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+}
 
+
+
+/*Header
+-------------------------------*/
+.header{
+    position: fixed;
+    width: 100%;
+    padding-top: 30px;
+    z-index: 6;
+}
+.header .logo img{
+    max-width: 150px;
+}
 
 /*Search e Estatisticas 
 -------------------------------*/
@@ -105,6 +116,17 @@ a:hover{color: #f9014d;}
 /*BREACKPOINT MAXIMOS
 -------------------------------*/
 @media(max-width: 767.9px){
+    /*menu*/
+    .nav-toggle{
+        color: #fff;
+    }
+    .header .nav{
+        display: none;
+    }
+
+    .header .nav{
+        display: none;
+    }
     .estatisticas{
         flex-direction: column;
     }
@@ -122,6 +144,23 @@ a:hover{color: #f9014d;}
 /*BREACKPOINT MINIMOS
 -------------------------------*/
 @media(min-width: 768px){
+
+    /*menu*/
+    .header .nav{
+        float: right;
+        margin-top: 20px;
+    }
+
+    .header .nav ul li{
+        display: inline-block;
+        margin-left: 20px; 
+    }
+
+
+    .search-box{
+        padding: 200px 0;
+    }
+
     .estatisticas{
         margin-top: -65px; 
 
@@ -138,11 +177,11 @@ a:hover{color: #f9014d;}
 }
 
 
+/*AUXILIARES
+-------------------------------*/
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
 
-
-
-
-
-
-
-
+.fl-left{float: left;}
+.fl-right{float: right;}
