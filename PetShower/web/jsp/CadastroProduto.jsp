@@ -5,10 +5,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/CadastroProduto.css" rel="stylesheet">
+
         <title>Cadastro</title>
-        <<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="CadastroProduto.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap">
+
     </head>
     <body>
         <main>
@@ -50,6 +50,5 @@
                 </fieldset>
             </form>
         </main>
-
     </body>
-</html>
+</html> 

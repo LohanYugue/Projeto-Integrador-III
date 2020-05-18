@@ -1,0 +1,148 @@
+/*RESET
+-------------------------------*/
+*, *:before, *:after{margin: 0; padding: 0; box-sizing: border-box; -webkit-box-sizing: border-box;}
+body{font-family:'Open Sans', sans-serif; font-size: inherit;}
+
+input, select, iframe, button{border: none; font-family:'Open Sans', sans-serif;} 
+h1,h2,h3{margin: 0;padding: 0;}
+ol,ul{list-style:none;}
+a{text-decoration: none; color: inherit;}
+a:hover{color: #f9014d;}
+
+
+/*Header
+-------------------------------*/
+.header{
+    display: none;
+}
+
+/*SECTION
+-------------------------------*/
+.section{
+    float: left;
+    width: 100%;
+}
+
+
+/*Search e Estatisticas 
+-------------------------------*/
+/*Search 
+-------------------------------*/
+.search-box{
+    text-align: center;
+    color: #fff;
+    padding: 100px 0px;
+    background-image: url(../img/background/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.search-box h1{
+    font-size: 37px;
+    font-weight: bold;
+}
+.search-box .tagline{
+    font-size: 26px;
+}
+.search-box form{
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    max-width: 500px;
+    margin: 40px;
+}
+.search-box form input[type="search"]{
+    width: 100%;
+    height: 50px;
+    font-size: inherit;
+    color: #2c3e50;
+    padding: 0 70px 0 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+.search-box form button{
+    background: #a70606;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px; 
+    border-bottom-right-radius: 6px; 
+}
+
+/*Estatisticas*/
+.estatisticas{
+    background: #fff;
+    max-width: 960px;
+    width: 90%;
+    padding: 30px 0;
+    margin: -40px auto 0 auto;
+    text-align: center;
+
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 30px rgba(0,0,0,.3);
+    box-shadow: 0px 0px 30px rgba(0,0,0,.3);
+}
+.estatisticas-item span{
+    font-size: 33px;
+    font-weight: bold;
+}
+.estatisticas-item p{
+    font-size: 20px;
+}
+
+/*BREACKPOINT MAXIMOS
+-------------------------------*/
+@media(max-width: 767.9px){
+    .estatisticas{
+        flex-direction: column;
+    }
+    .estatisticas-item{
+        min-width: 90%;
+    }
+    .estatisticas-item:not(:last-of-type){
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+
+/*BREACKPOINT MINIMOS
+-------------------------------*/
+@media(min-width: 768px){
+    .estatisticas{
+        margin-top: -65px; 
+
+    }
+    .estatisticas-item{
+        text-align: center;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .estatisticas-item:not(:last-of-type){
+        border-right: 1px solid #ccc;
+    }
+}
+
+
+
+
+
+
+
+
+
+
