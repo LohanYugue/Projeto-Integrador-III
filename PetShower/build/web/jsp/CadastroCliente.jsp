@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
         <link rel="stylesheet" type="text/css" href="bootstrap/font/fontawesome-all.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-        <link href="../css/CadastroProduto.css" rel="stylesheet">
+        <link href="../css/CadastroCliente.css" rel="stylesheet">
 
         <title>Cadastro</title>
 
@@ -28,31 +28,46 @@
         <main>
             <form>
                 <fieldset class="fieldset">
-                    <h1><center>Cadastro Produtos</center></h1>
+                    <h1><center>Cadastro Clientes</center></h1>
 
                     <div class="form-group">
                         <label for="codigo">Código:</label>
-                        <input type="number" class="form-control" id="codigo" name="idProduto">
+                        <input type="number" class="form-control" id="codigo" name="idCliente">
                     </div>
 
                     <div class="form-group">
                         <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="proNome">
+                        <input type="text" class="form-control" id="nome" name="cliNome">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cpf">CPF:</label>
+                        <input type="number" class="form-control" id="cpf" name="cliCpf">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="data">Data de Nascimento:</label>
+                        <input type="date" class="form-control" id="data" name="cliDataNasc">
                     </div>
 
                     <div class="form-group">
-                        <label for="valor">Valor:</label>
-                        <input type="text" class="form-control" id="valor" name="proValor">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" class="form-control" id="endereco" name="cliEndereco">
                     </div>
 
                     <div class="form-group">
-                        <label for="quantidade">Quantidade:</label>
-                        <input type="number" class="form-control" id="estoque" name="proEstoque">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" class="form-control" id="cidade" name="cliCidade">
                     </div>
-
+                    
                     <div class="form-group">
-                        <label for="data">Data:</label>
-                        <input type="date" class="form-control" id="data" name="proDataCadastro">
+                        <label for="uf">UF:</label>
+                        <input type="text" class="form-control" id="uf" name="cliUf">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" class="form-control" id="telefone" name="cliTelefone">
                     </div>
 
                     <div>
@@ -64,11 +79,8 @@
                         
                         <div>
                         <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
-                        
-                            
+                                  
                     </div>
-
-
                 </fieldset>
             </form>
         </main>

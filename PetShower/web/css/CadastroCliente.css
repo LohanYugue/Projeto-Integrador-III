@@ -40,18 +40,22 @@ a:hover{color: #f9014d;}
 .form-group{
     display: block;
     padding: 10px;
+}
+label {
+    margin: 3px 0;
     
 }
+
 /*Fidlset
 -------------------------------*/
 .fieldset{
     position: absolute;
-    top: 0px;
+    top: 20px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     width: 800px;
-    height: 300px;
+    height: 415px;
     margin: auto;
     box-shadow: 0px 0px 10px black;
     padding: 20px;
@@ -87,6 +91,8 @@ a:hover{color: #f9014d;}
 div > div {
     display: inline-block;
 }
+
+
 
 
 

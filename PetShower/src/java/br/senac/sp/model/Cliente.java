@@ -9,26 +9,12 @@ public class Cliente {
     private String cliEndereco;
     private Date cliDataNasc;
     private String cliCpf;
-    private String cliBairro;
     private String cliCidade;
     private String cliUf;
-    private String cliCep;
     private String cliTelefone;
 
-    public Cliente(Date cliDataNasc, int idCliente, String cliNome, String cliEndereco, String cliCpf, String cliBairro, String cliCidade, String cliUf, String cliCep, String cliTelefone) {
-        this.idCliente = idCliente;
-        this.cliDataNasc = cliDataNasc;
-        this.cliNome = cliNome;
-        this.cliEndereco = cliEndereco;
-        this.cliCpf = cliCpf;
-        this.cliBairro = cliBairro;
-        this.cliCidade = cliCidade;
-        this.cliUf = cliUf;
-        this.cliCep = cliCep;
-        this.cliTelefone = cliTelefone;
-    }
-    public Cliente(){
-        
+    public Cliente() {
+
     }
 
     public Date getCliDataNasc() {
@@ -71,14 +57,6 @@ public class Cliente {
         this.cliCpf = cliCpf;
     }
 
-    public String getCliBairro() {
-        return cliBairro;
-    }
-
-    public void setCliBairro(String cliBairro) {
-        this.cliBairro = cliBairro;
-    }
-
     public String getCliCidade() {
         return cliCidade;
     }
@@ -95,14 +73,6 @@ public class Cliente {
         this.cliUf = cliUf;
     }
 
-    public String getCliCep() {
-        return cliCep;
-    }
-
-    public void setCliCep(String cliCep) {
-        this.cliCep = cliCep;
-    }
-
     public String getCliTelefone() {
         return cliTelefone;
     }
@@ -113,7 +83,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente {" + "::idCliente = " + this.idCliente + "::cliNome = " + this.cliNome + "::cliEndereco = " + this.cliEndereco + "::cliBairro = " + this.cliBairro + "::cliCidade = " + this.cliCidade + "::cliUf = " + this.cliUf + "::cliCep = " + this.cliCep + "::cliTelefone = " + this.cliTelefone + "}";
+        return "Cliente {" + "::idCliente = " + this.idCliente + "::cliNome = " + this.cliNome + "::cliEndereco = " + this.cliEndereco + "::cliCidade = " + this.cliCidade + "::cliUf = " + this.cliUf + "::cliTelefone = " + this.cliTelefone + "}";
     }
 
 }

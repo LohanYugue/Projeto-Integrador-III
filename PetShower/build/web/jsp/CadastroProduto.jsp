@@ -1,21 +1,34 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleeapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/font/fontawesome-all.min.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link href="../css/CadastroProduto.css" rel="stylesheet">
 
         <title>Cadastro</title>
 
     </head>
     <body>
+        <!-- start header-->
+        <header class="header">
+            <div class ="content">
+                <div class="logo fl-left " >
+                    <a href="#">
+                        <img src="../img/background/logo_size.png" alt="LogoPetShower"/>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- end /header -->
         <main>
-            <h1><center>Cadastro de Produtos</center></h1>
             <form>
-                <fieldset>
-                    <legend>Dados</legend>
+                <fieldset class="fieldset">
+                    <h1><center>Cadastro Produtos</center></h1>
 
                     <div class="form-group">
                         <label for="codigo">Código:</label>
@@ -43,7 +56,16 @@
                     </div>
 
                     <div>
-                        <button type="submit" class="btn btn-primary mb-3">Salvar</button>
+                        <div>
+                        <button type="submit" class="btnSalvar">Salvar</button>
+                    
+                        <div>
+                        <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
+                        
+                        <div>
+                        <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
+                        
+                            
                     </div>
 
 

@@ -22,17 +22,15 @@ public class ClienteDAO {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("INSERT INTO Cliente(cli_nome,cli_cpf,cli_dataNascimento,cli_endereco,"
-                            + "cli_bairro,cli_cidade,cli_uf,cli_cep,cli_telefone)"
-                            + " VALUES (?,?,?,?,?,?,?,?,?)");
+                            + "cli_cidade,cli_uf,cli_telefone)"
+                            + " VALUES (?,?,?,?,?,?,?)");
             preparedStatement.setString(1, cliente.getCliNome());
             preparedStatement.setString(2, cliente.getCliCpf());
             preparedStatement.setDate(3, new java.sql.Date(cliente.getCliDataNasc().getTime()));
             preparedStatement.setString(4, cliente.getCliEndereco());
-            preparedStatement.setString(5, cliente.getCliBairro());
-            preparedStatement.setString(6, cliente.getCliCidade());
-            preparedStatement.setString(7, cliente.getCliUf());
-            preparedStatement.setString(8, cliente.getCliCep());
-            preparedStatement.setString(9, cliente.getCliTelefone());
+            preparedStatement.setString(5, cliente.getCliCidade());
+            preparedStatement.setString(6, cliente.getCliUf());
+            preparedStatement.setString(7, cliente.getCliTelefone());
 
             preparedStatement.executeUpdate();
 
@@ -58,18 +56,16 @@ public class ClienteDAO {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("UPDATE Cliente SET cli_nome=?, cli_cpf=?, cli_dataNascimento=?, cli_endereco=?"
-                            + "cli_bairro=?, cli_cidade=?, cli_uf=?, cli_cep=?, cli_telefone=?"
+                            + "cli_cidade=?, cli_uf=?, cli_telefone=?"
                             + "WHERE cli_id=?");
             preparedStatement.setString(1, cliente.getCliNome());
             preparedStatement.setString(2, cliente.getCliCpf());
             preparedStatement.setDate(3, new java.sql.Date(cliente.getCliDataNasc().getTime()));
             preparedStatement.setString(4, cliente.getCliEndereco());
-            preparedStatement.setString(5, cliente.getCliBairro());
-            preparedStatement.setString(6, cliente.getCliCidade());
-            preparedStatement.setString(7, cliente.getCliUf());
-            preparedStatement.setString(8, cliente.getCliCep());
-            preparedStatement.setString(9, cliente.getCliTelefone());
-            preparedStatement.setInt(10, cliente.getIdCliente());
+            preparedStatement.setString(5, cliente.getCliCidade());
+            preparedStatement.setString(6, cliente.getCliUf());
+            preparedStatement.setString(7, cliente.getCliTelefone());
+            preparedStatement.setInt(8, cliente.getIdCliente());
 
             preparedStatement.executeUpdate();
 
@@ -90,10 +86,8 @@ public class ClienteDAO {
                 cliente.setCliCpf(rs.getString("cli_cpf"));
                 cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
                 cliente.setCliEndereco(rs.getString("cli_endereco"));
-                cliente.setCliBairro(rs.getString("cli_bairro"));
                 cliente.setCliCidade(rs.getString("cli_cidade"));
                 cliente.setCliUf(rs.getString("cli_uf"));
-                cliente.setCliCep(rs.getString("cli_cep"));
                 cliente.setCliTelefone(rs.getString("cli_telefone"));
                 cliente.setIdCliente(rs.getInt("cli_id"));
             }
@@ -116,10 +110,8 @@ public class ClienteDAO {
                 cliente.setCliCpf(rs.getString("cli_cpf"));
                 cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
                 cliente.setCliEndereco(rs.getString("cli_endereco"));
-                cliente.setCliBairro(rs.getString("cli_bairro"));
                 cliente.setCliCidade(rs.getString("cli_cidade"));
                 cliente.setCliUf(rs.getString("cli_uf"));
-                cliente.setCliCep(rs.getString("cli_cep"));
                 cliente.setCliTelefone(rs.getString("cli_telefone"));
                 cliente.setIdCliente(rs.getInt("cli_id"));
             }
@@ -141,10 +133,8 @@ public class ClienteDAO {
                 cliente.setCliCpf(rs.getString("cli_cpf"));
                 cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
                 cliente.setCliEndereco(rs.getString("cli_endereco"));
-                cliente.setCliBairro(rs.getString("cli_bairro"));
                 cliente.setCliCidade(rs.getString("cli_cidade"));
                 cliente.setCliUf(rs.getString("cli_uf"));
-                cliente.setCliCep(rs.getString("cli_cep"));
                 cliente.setCliTelefone(rs.getString("cli_telefone"));
                 cliente.setIdCliente(rs.getInt("cli_id"));
                 listaDeClientes.add(cliente);
