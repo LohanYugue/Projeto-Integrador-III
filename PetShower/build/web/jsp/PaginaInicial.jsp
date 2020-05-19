@@ -52,18 +52,105 @@
 
             <div class="estatisticas">
                 <div class="estatisticas-item">
-                    <a href="CadastroVenda.jsp">Venda</a><br>
+                    <a href="CadastroVenda.jsp"> Cadastro de Venda</a><br>
                 </div>
                 <div class="estatisticas-item">
-                    <a href="CadastroCliente.jsp">Cliente</a><br>
+                    <a href="CadastroCliente.jsp">Cadastro de Cliente</a><br>
                 </div>
                 <div class="estatisticas-item">
-                    <a href="CadastroProduto.jsp">Produto</a><br>
+                    <a href="CadastroProduto.jsp">Cadastro de Produto</a><br>
                 </div>
             </div>
 
         </section>
 
         <!-- end search e estatisticas -->
+
+
+        <!-- start Produtos -->
+        <section class="section">
+            <div class="content">
+                <header class="section-header">
+                    <h1> Aqui voce encontra os melhores produtos para seu pet</h1>
+                    <p>Em diversas categorias!!</p>
+                </header>
+
+                <div class="row">
+                    <div class="produtos-col">
+
+                        <div class="box">
+                            <div class="box-name">
+                                Medicamentos
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/seleções/antipulgas.png" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>Os melhores medicamentos</h2>
+                                    <p>Pets</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>   
+
+                <div class="row">
+                    <div class="produtos-col">
+
+                        <div class="box">
+                            <div class="box-name">
+                                Rações
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/seleções/ração-seca.png" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>As melhores Rações</h2>
+                                    <p>Pets</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>   
+
+                <div class="row">
+                    <div class="produtos-col">
+
+                        <div class="box">
+                            <div class="box-name">
+                                Tapetes
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/seleções/tapetes.png" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>Os melhores Tapetes</h2>
+                                    <p>Pets</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>   
+
+
+            </div>
+
+        </section>
+        <!-- end Produtos -->
+
+
+
     </body>
 </html>

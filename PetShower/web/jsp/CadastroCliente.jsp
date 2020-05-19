@@ -25,6 +25,8 @@
             </div>
         </header>
         <!-- end /header -->
+
+        <!-- start form -->
         <main>
             <form>
                 <fieldset class="fieldset">
@@ -32,19 +34,19 @@
 
                     <div class="form-group">
                         <label for="codigo">Código:</label>
-                        <input type="number" class="form-control" id="codigo" name="idCliente">
+                        <input type="number" size="5" maxlength="5" value="0"  class="form-control" id="codigo" name="idCliente"/>
                     </div>
 
                     <div class="form-group">
                         <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="cliNome">
+                        <input type="text"  maxlength="25" class="form-control" id="nome" name="cliNome">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="cpf">CPF:</label>
                         <input type="number" class="form-control" id="cpf" name="cliCpf">
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="data">Data de Nascimento:</label>
                         <input type="date" class="form-control" id="data" name="cliDataNasc">
@@ -59,30 +61,33 @@
                         <label for="cidade">Cidade:</label>
                         <input type="text" class="form-control" id="cidade" name="cliCidade">
                     </div>
-                    
+
                     <div class="form-group">
-                        <label for="uf">UF:</label>
-                        <input type="text" class="form-control" id="uf" name="cliUf">
+                        <select>
+                            <option value="">Selecione</option>
+                            <option value="RJ">RJ</option>
+                            <option value="SP">SP</option>
+
+                        </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
                         <input type="number" class="form-control" id="telefone" name="cliTelefone">
                     </div>
 
                     <div>
-                        <div>
+
                         <button type="submit" class="btnSalvar">Salvar</button>
-                    
-                        <div>
+
                         <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
-                        
-                        <div>
+
                         <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
-                                  
+
                     </div>
                 </fieldset>
             </form>
         </main>
+        <!-- end form -->
     </body>
 </html> 

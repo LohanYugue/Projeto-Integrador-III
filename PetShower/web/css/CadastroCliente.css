@@ -27,7 +27,7 @@ a:hover{color: #f9014d;}
 -------------------------------*/
 .header{
     position: fixed;
-    width: 100%;
+    width: 80%;
     padding-top: 30px;
     z-index: 6;
 }
@@ -43,7 +43,7 @@ a:hover{color: #f9014d;}
 }
 label {
     margin: 3px 0;
-    
+
 }
 
 /*Fidlset
@@ -86,7 +86,7 @@ label {
     border: 0;
     color: white;
     margin-left: 10px;
-    
+
 }
 div > div {
     display: inline-block;

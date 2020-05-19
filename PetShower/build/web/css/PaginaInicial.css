@@ -8,6 +8,7 @@ h1,h2,h3{margin: 0;padding: 0;}
 ol,ul{list-style:none;}
 a{text-decoration: none; color: inherit;}
 a:hover{color: #f9014d;}
+img{max-width: 100%; border: none;}
 
 /*GERAIS
 -------------------------------*/
@@ -15,24 +16,132 @@ a:hover{color: #f9014d;}
     float: left;
     width: 100%;
 }
+.section:not(:first-of-type){
+    margin-top: 60px; 
+    float: left;
+    width: 100%;
+}
+.section-header{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+.section-header h1 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #000;
+}
+
+
 .content{
     max-width: 960px;
     width: 90%;
     margin: 0 auto;
 }
 
+.row{
+    float: left;
+    width: 100%;
+}
+
+
+/*BOX
+----------------------------------*/
+.box{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.box-name{
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    top: 10px;
+    font-size: 10px;
+    color: #fff;
+    padding: 5px 10px;
+    background: #f9014d;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.box-cover{
+    font-size: 0;
+    line-height: 1em;
+}
+.box-cover img{
+    width: 100%;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.box-detalhes{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom:0;
+    padding: 15px;
+    color: #fff; /* ou alterar a cor*/
+}
+.box-detalhes:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .8;
+    visibility: hidden;
+    background: linear-gradient(to bottom, transparent, #000);
+
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-transform: translate(0,50%);
+    transform: translate(0,50%);
+}
+.box-detalhes-info{
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+
+    -webkit-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    -webkit-transform: translate(0,50%);
+    transform: translate(0,50%);
+}
+.box-detalhes-info h1{
+    font-size: 20px;
+}
+
+/*box:hover*/
+.box:hover .box-cover img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.box:hover .box-detalhes:before,
+.box:hover .box-detalhes-info{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+} 
 
 
 /*Header
 -------------------------------*/
 .header{
     position: fixed;
-    width: 100%;
+    width: 95%;
     padding-top: 30px;
     z-index: 6;
 }
 .header .logo img{
     max-width: 150px;
+    width: 100%;
 }
 
 /*Search e Estatisticas 
@@ -41,7 +150,7 @@ a:hover{color: #f9014d;}
 -------------------------------*/
 .search-box{
     text-align: center;
-    color: #fff;
+    color: #000;
     padding: 100px 0px;
     background-image: url(../img/background/background.jpg);
     background-size: cover;
@@ -108,41 +217,24 @@ a:hover{color: #f9014d;}
 .estatisticas-item a{
     font-size: 40px;
     font-weight: bold;
-    color: #5f5a5a
+    color:  #000;
 }
 .estatisticas-item p{
     font-size: 20px;
+    color: #4682B4;
 }
 
-/*BREACKPOINT MAXIMOS
+
+/*Destinos
 -------------------------------*/
-@media(max-width: 767.9px){
-    /*menu*/
-    .nav-toggle{
-        color: #fff;
-    }
-    .header .nav{
-        display: none;
-    }
+.produtos-col{
+    margin-bottom: 20px;
 
-    .header .nav{
-        display: none;
-    }
-    .estatisticas{
-        flex-direction: column;
-    }
-    .estatisticas-item{
-        min-width: 90%;
-    }
-    .estatisticas-item:not(:last-of-type){
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #ccc;
-    }
 }
 
 
-/*BREACKPOINT MINIMOS
+
+/* Media
 -------------------------------*/
 @media(min-width: 768px){
 
@@ -156,11 +248,20 @@ a:hover{color: #f9014d;}
         display: inline-block;
         margin-left: 20px; 
     }
+    .header .nav ul li a{
+        color: #000;
+    }
+    .header .nav ul li a:hover{
+        color: #4682B4;
+    }
 
 
+    /*search*/
     .search-box{
         padding: 200px 0;
     }
+
+    /*estatistiicas*/
 
     .estatisticas{
         margin-top: -65px; 
@@ -174,6 +275,19 @@ a:hover{color: #f9014d;}
     }
     .estatisticas-item:not(:last-of-type){
         border-right: 1px solid #ccc;
+    }
+    /*produtos-col*/
+    .produtos-col{
+        width: 5%;
+        margin-right: 2%;
+        float: left;
+
+    }
+    .produtos-col:nth-child(odd){
+        margin-right: 0;
+    }
+    .produtos-col:first-child{
+        width: 100%;
     }
 }
 
