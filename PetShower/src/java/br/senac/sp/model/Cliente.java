@@ -12,9 +12,23 @@ public class Cliente {
     private String cliCidade;
     private String cliUf;
     private String cliTelefone;
+    
+    public Cliente(){
+        
+    }
 
-    public Cliente() {
-
+    public Cliente(int idCliente,String cliNome, String cliEndereco, Date cliDataNasc,
+            String cliCpf, String cliCidade, String cliUf, String cliTelefone) {
+        this.idCliente = idCliente;
+        this.cliNome = cliNome;
+        this.cliEndereco = cliEndereco;
+        this.cliDataNasc = cliDataNasc;
+        this.cliCpf = cliCpf;
+        this.cliCidade = cliCidade;
+        this.cliUf = cliUf;
+        this.cliTelefone = cliTelefone;
+        
+        
     }
 
     public Date getCliDataNasc() {

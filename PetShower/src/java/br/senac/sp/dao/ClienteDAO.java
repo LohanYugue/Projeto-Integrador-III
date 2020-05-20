@@ -21,16 +21,16 @@ public class ClienteDAO {
     public void adicionarCliente(Cliente cliente) {
         try {
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("INSERT INTO Cliente(cli_nome,cli_cpf,cli_dataNascimento,cli_endereco,"
+                    .prepareStatement("INSERT INTO Cliente(cli_nome,cli_cpf,cli_endereco,"
                             + "cli_cidade,cli_uf,cli_telefone)"
                             + " VALUES (?,?,?,?,?,?,?)");
             preparedStatement.setString(1, cliente.getCliNome());
             preparedStatement.setString(2, cliente.getCliCpf());
-            preparedStatement.setDate(3, new java.sql.Date(cliente.getCliDataNasc().getTime()));
-            preparedStatement.setString(4, cliente.getCliEndereco());
-            preparedStatement.setString(5, cliente.getCliCidade());
-            preparedStatement.setString(6, cliente.getCliUf());
-            preparedStatement.setString(7, cliente.getCliTelefone());
+            //preparedStatement.setDate(3, new java.sql.Date(cliente.getCliDataNasc().getTime()));
+            preparedStatement.setString(3, cliente.getCliEndereco());
+            preparedStatement.setString(4, cliente.getCliCidade());
+            preparedStatement.setString(5, cliente.getCliUf());
+            preparedStatement.setString(6, cliente.getCliTelefone());
 
             preparedStatement.executeUpdate();
 
@@ -55,17 +55,17 @@ public class ClienteDAO {
     public void editarCliente(Cliente cliente) {
         try {
             PreparedStatement preparedStatement = connection
-                    .prepareStatement("UPDATE Cliente SET cli_nome=?, cli_cpf=?, cli_dataNascimento=?, cli_endereco=?"
+                    .prepareStatement("UPDATE Cliente SET cli_nome=?, cli_cpf=?, cli_endereco=?"
                             + "cli_cidade=?, cli_uf=?, cli_telefone=?"
                             + "WHERE cli_id=?");
             preparedStatement.setString(1, cliente.getCliNome());
             preparedStatement.setString(2, cliente.getCliCpf());
-            preparedStatement.setDate(3, new java.sql.Date(cliente.getCliDataNasc().getTime()));
-            preparedStatement.setString(4, cliente.getCliEndereco());
-            preparedStatement.setString(5, cliente.getCliCidade());
-            preparedStatement.setString(6, cliente.getCliUf());
-            preparedStatement.setString(7, cliente.getCliTelefone());
-            preparedStatement.setInt(8, cliente.getIdCliente());
+            //preparedStatement.setDate(3, new java.sql.Date(cliente.getCliDataNasc().getTime()));
+            preparedStatement.setString(3, cliente.getCliEndereco());
+            preparedStatement.setString(4, cliente.getCliCidade());
+            preparedStatement.setString(5, cliente.getCliUf());
+            preparedStatement.setString(6, cliente.getCliTelefone());
+            preparedStatement.setInt(7, cliente.getIdCliente());
 
             preparedStatement.executeUpdate();
 
@@ -74,7 +74,7 @@ public class ClienteDAO {
         }
     }
 
-    public Cliente BuscarClienteCpf(String cliCpf) {
+    public Cliente buscarClienteCpf(String cliCpf) {
         Cliente cliente = new Cliente();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Cliente WHERE cli_cpf=?");
@@ -84,7 +84,7 @@ public class ClienteDAO {
             if (rs.next()) {
                 cliente.setCliNome(rs.getString("cli_nome"));
                 cliente.setCliCpf(rs.getString("cli_cpf"));
-                cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
+                //cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
                 cliente.setCliEndereco(rs.getString("cli_endereco"));
                 cliente.setCliCidade(rs.getString("cli_cidade"));
                 cliente.setCliUf(rs.getString("cli_uf"));
@@ -98,7 +98,7 @@ public class ClienteDAO {
         return cliente;
     }
 
-    public Cliente BuscarClienteId(int idCliente) {
+    public Cliente buscarClienteId(int idCliente) {
         Cliente cliente = new Cliente();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Cliente WHERE cli_id=?");
@@ -108,7 +108,7 @@ public class ClienteDAO {
             if (rs.next()) {
                 cliente.setCliNome(rs.getString("cli_nome"));
                 cliente.setCliCpf(rs.getString("cli_cpf"));
-                cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
+                //cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
                 cliente.setCliEndereco(rs.getString("cli_endereco"));
                 cliente.setCliCidade(rs.getString("cli_cidade"));
                 cliente.setCliUf(rs.getString("cli_uf"));
@@ -131,7 +131,7 @@ public class ClienteDAO {
                 Cliente cliente = new Cliente();
                 cliente.setCliNome(rs.getString("cli_nome"));
                 cliente.setCliCpf(rs.getString("cli_cpf"));
-                cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
+                //cliente.setCliDataNasc(rs.getDate("cli_dataNascimento"));
                 cliente.setCliEndereco(rs.getString("cli_endereco"));
                 cliente.setCliCidade(rs.getString("cli_cidade"));
                 cliente.setCliUf(rs.getString("cli_uf"));

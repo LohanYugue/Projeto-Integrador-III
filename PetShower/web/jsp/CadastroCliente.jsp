@@ -28,7 +28,7 @@
 
         <!-- start form -->
         <main>
-            <form>
+            <form action="CadastroCliente" method="POST">
                 <fieldset class="fieldset">
                     <h1><center>Cadastro Clientes</center></h1>
 
