@@ -16,7 +16,7 @@
 
     <body>
         <!-- start header-->
-        <header class="header">
+        <header class="header fixed">
             <div class ="content">
                 <div class="logo fl-left " >
                     <a href="#">
@@ -24,13 +24,10 @@
                     </a>
                 </div>
 
-
-
                 <nav class="nav">
                     <ul>
-                        <li><a href="#">Atendimento</a></li>
-                        <li><a href="#">Lojas</a></li>
-                        <li><a href="#">Relatórios</a></li>
+                        <li><a href="#produtos-col">Produtos</a></li> 
+                        <li><a href="#section-header">Atendimento</a></li>           
                     </ul>
                 </nav>
             </div>
@@ -76,6 +73,7 @@
                 </header>
 
                 <div class="row">
+                    <a name="produtos-col" id="produtos-col"></a> 
                     <div class="produtos-col">
 
                         <div class="box">
@@ -96,9 +94,9 @@
                         </div>
 
                     </div>
-                </div>   
 
-                <div class="row">
+
+
                     <div class="produtos-col">
 
                         <div class="box">
@@ -119,9 +117,9 @@
                         </div>
 
                     </div>
-                </div>   
 
-                <div class="row">
+
+
                     <div class="produtos-col">
 
                         <div class="box">
@@ -142,6 +140,27 @@
                         </div>
 
                     </div>
+
+                    <div class="produtos-col">
+
+                        <div class="box">
+                            <div class="box-name">
+                                Shampoo
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/seleções/shampoo-para-cachorros.jpg" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>Os melhores Tapetes</h2>
+                                    <p>Pets</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>   
 
 
@@ -149,6 +168,138 @@
 
         </section>
         <!-- end Produtos -->
+
+        <!-- start parallax -->
+        <div class="parallax">
+            <div class="content">
+                <h1>ENCONTROU O QUE PRECISAVA?</h1>
+                <p>Temos tudo o que eles gostam</p>
+                <button>SAÍBA MAIS</button> 
+            </div>
+        </div>
+        <!-- end parallax -->
+
+        <!-- start LOJAS -->
+        <section class="section">
+            <div class="content">
+                <a name="section-header" id="section-header"></a>
+                <header class="section-header">
+                    <h1> Veja algumas de nossas lojas</h1>
+                    <p>Procure a sua região</p>
+                </header>
+
+                <div class="row">
+                    <div class="destaques-col">
+                        <div class="box">
+                            <div class="box-name">
+                                Lojas
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/Lojas/loja1.jpg" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>Santo amaro</h2>
+                                    <p>(11)75847-2481</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destaques-col">
+                        <div class="box">
+                            <div class="box-name">
+                                Lojas
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/Lojas/loja2.jpg" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>Cachoeirinha</h2>
+                                    <p>(11)75847-2481</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destaques-col">
+                        <div class="box">
+                            <div class="box-name">
+                                Lojas
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/Lojas/loja3.jpg" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>Avenida Paulista</h2>
+                                    <p>(11)75847-2481</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="destaques-col">
+                        <div class="box">
+                            <div class="box-name">
+                                Lojas
+                            </div>
+
+                            <div class="box-cover">
+                                <img src="../img/Lojas/loja4.jpg" alt=""/>
+                            </div>
+
+                            <div class="box-detalhes">
+                                <div class="box-detalhes-info">
+                                    <h2>Freguesia do Ó</h2>
+                                    <p>(11)75847-2481</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end  LOJAS -->
+
+        <!-- start footer -->
+        <footer class="footer">
+            <div class="content">
+                <div class="footer-col">
+                    <h1>Sobre a empresa</h1>
+                    <p>Primeiramente, Agradecer o professor por nos deixar com um tempo a mais para realizar o termino do projeto. Projeto realizado apenas por Edson e Isadora, pois todos os outros integrantes do grupo desisitiram do projeto ou do curso.</p>
+                </div>
+                <div class="footer-col">
+                    <h1>Links Úteis</h1>
+                    <ul class="footer-col-links">
+                        <li><a href="https://github.com/LohanYugue/Projeto-Integrador-III/tree/master/PetShower/web/jsp">GitHub</a></li>
+                        <li><a href="https://www.sp.senac.br/jsp/default.jsp?newsID=0">Senac</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="footer-col">
+                    <h1>Social</h1>
+                    <ul class="footer-col-social">
+                        <li><a href="#"><i class="fab fa-twitter"></i>Twiter</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- end footer -->
+
+
 
 
 

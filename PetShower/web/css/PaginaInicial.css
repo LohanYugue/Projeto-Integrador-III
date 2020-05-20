@@ -68,7 +68,7 @@ img{max-width: 100%; border: none;}
 }
 .box-cover{
     font-size: 0;
-    line-height: 1em;
+    line-height: 5px;
 }
 .box-cover img{
     width: 100%;
@@ -83,7 +83,7 @@ img{max-width: 100%; border: none;}
     left: 0;
     bottom:0;
     padding: 15px;
-    color: #fff; /* ou alterar a cor*/
+    color: #fff;
 }
 .box-detalhes:before{
     content: "";
@@ -135,7 +135,7 @@ img{max-width: 100%; border: none;}
 -------------------------------*/
 .header{
     position: fixed;
-    width: 95%;
+    width: 100%;
     padding-top: 30px;
     z-index: 6;
 }
@@ -143,6 +143,7 @@ img{max-width: 100%; border: none;}
     max-width: 150px;
     width: 100%;
 }
+
 
 /*Search e Estatisticas 
 -------------------------------*/
@@ -225,70 +226,160 @@ img{max-width: 100%; border: none;}
 }
 
 
-/*Destinos
+
+
+
+/* Parallax
 -------------------------------*/
-.produtos-col{
+.parallax{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    padding: 100px 0px;
+    font-size: 23px;
+    margin-top: 60px;
+    background-image: url(../img/background/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.parallax h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+.parallax button{
+    font-size: 20px;
+    color: #fff;
+    background:  #4682B4;
+    padding: 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-border-radius: 10px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+.parallax button:hover{
+    background: #2c3e50;
+}
+/*Lojas/Atendimentos
+--------------------------*/
+.destaques-col{
     margin-bottom: 20px;
 
+}
+/*lojas*/
+.destaques-col{
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+}
+.destaques-col:nth-of-type(2n+0){
+    margin-right: 0;
+}
+
+
+/*Footer
+-------------------------*/
+.footer{
+    background-image: url(../img/background/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    float: left;
+    width: 100%;
+    color: #181818;
+    padding: 30px 0;
+}
+.footer-col{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.footer-col h1{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer-col-links li{
+    padding: 10px 0;
+}
+.footer-col-links li:not(:last-of-type){
+    border-bottom: 1px solid #181818; 
+
+}
+.footer-col-social li{
+    padding: 10px 0;
+}
+.footer-col-social li .fab{
+    font-size: 25px;
+    margin-right: 5px;
+}
+.footer-col{
+    width: 45%;
+}
+.footer-col:nth-child(2){
+    width: 30%;
+    margin-left: 5%;
+}
+.footer-col:nth-child(3){
+    width: 15%;
+    float: right;
 }
 
 
 
-/* Media
--------------------------------*/
-@media(min-width: 768px){
+/*menu
+-------------------------*/
+.header .nav{
+    float: right;
+    margin-top: 13px;
+}
 
-    /*menu*/
-    .header .nav{
-        float: right;
-        margin-top: 20px;
-    }
-
-    .header .nav ul li{
-        display: inline-block;
-        margin-left: 20px; 
-    }
-    .header .nav ul li a{
-        color: #000;
-    }
-    .header .nav ul li a:hover{
-        color: #4682B4;
-    }
+.header .nav ul li{
+    display: inline-block;
+    margin-left: 20px; 
+}
+.header .nav ul li a{
+    color: #000;
+}
+.header .nav ul li a:hover{
+    color: #4682B4;
+}
 
 
-    /*search*/
-    .search-box{
-        padding: 200px 0;
-    }
+/*search*/
+.search-box{
+    padding: 200px 0;
+}
 
-    /*estatistiicas*/
+/*estatistiicas*/
 
-    .estatisticas{
-        margin-top: -65px; 
+.estatisticas{
+    margin-top: -65px; 
 
-    }
-    .estatisticas-item{
-        text-align: center;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-    }
-    .estatisticas-item:not(:last-of-type){
-        border-right: 1px solid #ccc;
-    }
-    /*produtos-col*/
-    .produtos-col{
-        width: 5%;
-        margin-right: 2%;
-        float: left;
-
-    }
-    .produtos-col:nth-child(odd){
-        margin-right: 0;
-    }
-    .produtos-col:first-child{
-        width: 100%;
-    }
+}
+.estatisticas-item{
+    text-align: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    cursor: pointer;
+}
+.estatisticas-item:not(:last-of-type){
+    border-right: 1px solid #ccc;
+}
+/*produtos-col*/
+.produtos-col{
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    float: left;
+}
+.produtos-col:nth-of-type(2n+0){
+    margin-right: 0;
 }
 
 

@@ -28,52 +28,47 @@
 
         <!-- start form -->
         <main>
-            <form action="CadastroCliente" method="POST">
+            <form>
                 <fieldset class="fieldset">
                     <h1><center>Cadastro Clientes</center></h1>
 
                     <div class="form-group">
-                        <label for="codigo">Código:</label>
-                        <input type="number" size="5" maxlength="5" value="0"  class="form-control" id="codigo" name="idCliente"/>
-                    </div>
-
-                    <div class="form-group">
                         <label for="nome">Nome:</label>
-                        <input type="text"  maxlength="25" class="form-control" id="nome" name="cliNome">
+                        <input type="text"  maxlength="25" class="form-control" placeholder="Insira seu nome completo" id="nome" name="cliNome">
                     </div>
 
                     <div class="form-group">
                         <label for="cpf">CPF:</label>
-                        <input type="number" class="form-control" id="cpf" name="cliCpf">
+                        <input type="number" class="form-control"placeholder="Ex.:000.000.000.00" name="cliCpf">
                     </div>
 
                     <div class="form-group">
                         <label for="data">Data de Nascimento:</label>
-                        <input type="date" class="form-control" id="data" name="cliDataNasc">
+                        <input type="date" class="form-control " id="data"  name="cliDataNasc">
                     </div>
 
                     <div class="form-group">
                         <label for="endereco">Endereço:</label>
-                        <input type="text" class="form-control" id="endereco" name="cliEndereco">
+                        <input type="text" class="form-control" placeholder="Insira o nome da sua rua" id="endereco" name="cliEndereco">
                     </div>
 
                     <div class="form-group">
                         <label for="cidade">Cidade:</label>
-                        <input type="text" class="form-control" id="cidade" name="cliCidade">
+                        <input type="text" class="form-control" placeholder="Insira o nome da sua cidade" id="cidade" name="cliCidade">
                     </div>
 
                     <div class="form-group">
                         <select>
-                            <option value="">Selecione</option>
+                            <option value="">UF</option>
                             <option value="RJ">RJ</option>
-                            <option value="SP">SP</option>
+                            <option value="SP">SSP</option>
 
                         </select>
                     </div>
 
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
-                        <input type="number" class="form-control" id="telefone" name="cliTelefone">
+                        <input type="number" class="form-control" placeholder="Insira seu telefone" id="telefone" name="cliTelefone">
                     </div>
 
                     <div>

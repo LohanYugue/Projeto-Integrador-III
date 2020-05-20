@@ -1,10 +1,7 @@
 package br.senac.sp.servlet;
 
-import br.senac.sp.dao.ClienteDAO;
-import br.senac.sp.model.Cliente;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Date;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,25 +15,24 @@ public class CadastroCliente extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher dispatcher
-                = request.getRequestDispatcher("CadastroCliente.jsp");
-        dispatcher.forward(request, response);
-
+        //Empty
+        
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String nome = request.getParameter("cliNome");
-        String cpf = request.getParameter("cliCpf");
-        String endereco = request.getParameter("cliEndereco");
-        String cidade = request.getParameter("cliCidade");
-        String uf = request.getParameter("cliUf");
-        String telefone = request.getParameter("cliTelefone");
-        
-        Cliente cliente = new Cliente();
-        
-        PrintWriter out = response.getWriter();
+             // obtendo dados //
+            String nome = request.getParameter("Nome");
+            String endereco = request.getParameter("Endereço");
+            // mostrar os dados no log //
+		System.out.println(nome);
+		System.out.println(endereco);
+            // redirecionando para o jsp tratar 
+		RequestDispatcher rd = request.getRequestDispatcher("/sucesso.jsp");
+		rd.forward(request,response);
+
+            
     }
 
     @Override

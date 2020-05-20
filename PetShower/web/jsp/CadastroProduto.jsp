@@ -26,7 +26,7 @@
         </header>
         <!-- end /header -->
         <main>
-            <form action="CadastroProduto" method="POST">
+            <form>
                 <fieldset class="fieldset">
                     <h1><center>Cadastro Produtos</center></h1>
 
