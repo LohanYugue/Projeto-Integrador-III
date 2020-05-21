@@ -13,9 +13,10 @@ public class ConnectionFactory {
         Connection connection = null;
 
         try {
+            String user = "root";
+            String senha = "";
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            String url = "jdbc:mysql://localhost:3307/petshower";
-            connection = DriverManager.getConnection(url);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PI_PetShower", user, senha);
             status = "Connection opened";
 
         } catch (SQLException e) {
@@ -27,6 +28,7 @@ public class ConnectionFactory {
         }
         return connection;
     }
+
     public static void CloseConnection(Connection connection) throws SQLException {
 
         try {

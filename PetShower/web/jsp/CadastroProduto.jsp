@@ -9,7 +9,6 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/font/fontawesome-all.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link href="../css/CadastroProduto.css" rel="stylesheet">
-
         <title>Cadastro</title>
 
     </head>
@@ -31,19 +30,15 @@
                     <h1><center>Cadastro Produtos</center></h1>
 
                     <div class="form-group">
-                        <label for="codigo">Código:</label>
-                        <input type="number" class="form-control" id="codigo" name="idProduto">
-                    </div>
-
-                    <div class="form-group">
                         <label for="nome">Nome:</label>
-                        <input type="text" class="form-control" id="nome" name="proNome">
+                        <input type="text"  maxlength="25" class="form-control" placeholder="Insira o nome do produto" id="nome" name="cliNome">
                     </div>
 
                     <div class="form-group">
-                        <label for="valor">Valor:</label>
-                        <input type="text" class="form-control" id="valor" name="proValor">
+                        <label for="nome">Valor:</label>
+                        <input type="number"  maxlength="25" class="form-control" placeholder="Insira o nome do produto" id="nome" name="cliNome">
                     </div>
+
 
                     <div class="form-group">
                         <label for="quantidade">Quantidade:</label>
@@ -57,20 +52,20 @@
 
                     <div>
                         <div>
-                        <button type="submit" class="btnSalvar">Salvar</button>
-                    
-                        <div>
-                        <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
-                        
-                        <div>
-                        <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
-                        
-                            
-                    </div>
+                            <button type="submit" class="btnSalvar">Salvar</button>
+
+                            <div>
+                                <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
+
+                                <div>
+                                    <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
 
 
-                </fieldset>
-            </form>
-        </main>
-    </body>
-</html> 
+                                </div>
+
+
+                                </fieldset>
+                                </form>
+                                </main>
+                                </body>
+                                </html> 

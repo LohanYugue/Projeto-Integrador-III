@@ -1,4 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html>
 <html lang="pt">
     <head>
@@ -9,11 +11,22 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/font/fontawesome-all.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link href="../css/CadastroCliente.css" rel="stylesheet">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+        <script type="text/javascript" src="http://www.godtur.no/godtur/js/jquery-ui-1.8.18.custom.min.js"></script>
+
 
         <title>Cadastro</title>
 
     </head>
+
+
     <body>
+
+        <script>
+            $(function () {
+                $('input[name=dob]').datepicker();
+            });
+        </script>
         <!-- start header-->
         <header class="header">
             <div class ="content">
@@ -28,47 +41,50 @@
 
         <!-- start form -->
         <main>
-            <form>
+            <form method="POST" action='CadastroCliente' name="frmAddUser" >
                 <fieldset class="fieldset">
                     <h1><center>Cadastro Clientes</center></h1>
 
                     <div class="form-group">
                         <label for="nome">Nome:</label>
-                        <input type="text"  maxlength="25" class="form-control" placeholder="Insira seu nome completo" id="nome" name="cliNome">
+                        <input type="text"placeholder="Insira seu nome"  name="cliNome"
+                               value="<c:out value="${cliente.cli_nome}" />"
                     </div>
 
                     <div class="form-group">
                         <label for="cpf">CPF:</label>
-                        <input type="number" class="form-control"placeholder="Ex.:000.000.000.00" name="cliCpf">
+                        <input type="number"  placeholder="Insira seu cpf"name="cliCpf"
+                               value="<c:out value="${cliente.cli_cpf}" />">
                     </div>
 
                     <div class="form-group">
                         <label for="data">Data de Nascimento:</label>
-                        <input type="date" class="form-control " id="data"  name="cliDataNasc">
+                        <input type="text" placeholder="dd/MM/yyyy" name="cliDataNasc" data-date-format="dd/MM/yyyy"
+                               value="<fmt:formatDate pattern="dd/MM/yyyy" value="${cliente.cli_dataNascimento}" />" >
                     </div>
 
                     <div class="form-group">
                         <label for="endereco">Endereço:</label>
-                        <input type="text" class="form-control" placeholder="Insira o nome da sua rua" id="endereco" name="cliEndereco">
+                        <input type="text"  placeholder="Insira o nome da sua rua"  name="cliEndereco"
+                               value="<c:out value="${cliente.cli_rua}"/>" />
                     </div>
 
                     <div class="form-group">
                         <label for="cidade">Cidade:</label>
-                        <input type="text" class="form-control" placeholder="Insira o nome da sua cidade" id="cidade" name="cliCidade">
+                        <input type="text" placeholder="Insira o nome da sua cidade" name="cliCidade"
+                               value="<c:out value="${cliente.cli_cidade}" />">
                     </div>
 
                     <div class="form-group">
-                        <select>
-                            <option value="">UF</option>
-                            <option value="RJ">RJ</option>
-                            <option value="SP">SSP</option>
-
-                        </select>
+                        <label for="cidade">UF</label>
+                        <input type="text" placeholder="Insira o UF" name="cliUf"
+                               value="<c:out value="${cliente.cli_uf}" />">
                     </div>
 
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
-                        <input type="number" class="form-control" placeholder="Insira seu telefone" id="telefone" name="cliTelefone">
+                        <input type="number" placeholder="Insira seu telefone" name="cliTelefone"
+                               value="<c:out value="${cliente.cli_telefone}"/>">
                     </div>
 
                     <div>

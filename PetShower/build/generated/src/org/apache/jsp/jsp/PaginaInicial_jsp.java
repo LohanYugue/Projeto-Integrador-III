@@ -69,7 +69,8 @@ public final class PaginaInicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("\r\n");
       out.write("                <nav class=\"nav\">\r\n");
       out.write("                    <ul>\r\n");
-      out.write("                        <li><a href=\"section-header\">Atendimento</a></li>\r\n");
+      out.write("                        <li><a href=\"#produtos-col\">Produtos</a></li> \r\n");
+      out.write("                        <li><a href=\"#section-header\">Atendimento</a></li>           \r\n");
       out.write("                    </ul>\r\n");
       out.write("                </nav>\r\n");
       out.write("            </div>\r\n");
@@ -115,6 +116,7 @@ public final class PaginaInicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("                </header>\r\n");
       out.write("\r\n");
       out.write("                <div class=\"row\">\r\n");
+      out.write("                    <a name=\"produtos-col\" id=\"produtos-col\"></a> \r\n");
       out.write("                    <div class=\"produtos-col\">\r\n");
       out.write("\r\n");
       out.write("                        <div class=\"box\">\r\n");
@@ -223,6 +225,7 @@ public final class PaginaInicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("        <!-- start LOJAS -->\r\n");
       out.write("        <section class=\"section\">\r\n");
       out.write("            <div class=\"content\">\r\n");
+      out.write("                <a name=\"section-header\" id=\"section-header\"></a>\r\n");
       out.write("                <header class=\"section-header\">\r\n");
       out.write("                    <h1> Veja algumas de nossas lojas</h1>\r\n");
       out.write("                    <p>Procure a sua região</p>\r\n");
