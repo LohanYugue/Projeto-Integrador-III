@@ -1,9 +1,3 @@
-<%-- 
-    Document   : Vendas
-    Created on : 20/05/2020, 13:27:29
-    Author     : edson
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -15,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="bootstrap/font/fontawesome-all.min.css">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
         <link href="../css/CadastroProduto.css" rel="stylesheet">
-        <title>JSP Page</title>
+        <title>Cadastro Vendas</title>
     </head>
     <body>
         <!-- start header-->

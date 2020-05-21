@@ -27,7 +27,7 @@
 
         <fieldset class="fieldset ">
             <div class="tabela">
-                <h1><center>Lista de Produtos</center> </h1>
+                <h1>Lista de Produtos</h1>
                 <table border=1>
                     <thead>
                         <tr>

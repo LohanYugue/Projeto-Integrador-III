@@ -8,10 +8,8 @@ cli_nome varchar(30) not null,
 cli_endereco varchar(30) not null,
 cli_dataNascimento date not null,
 cli_cpf varchar(15) not null,
-cli_bairro varchar(15) not null,
 cli_cidade varchar(15) not null,
 cli_uf varchar(3) not null,
-cli_cep varchar(10) not null,
 cli_telefone varchar(10) not null,
 primary key (cli_id));
 

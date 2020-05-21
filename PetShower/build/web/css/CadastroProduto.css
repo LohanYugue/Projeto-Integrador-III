@@ -84,6 +84,14 @@ a:hover{color: #f9014d;}
     margin-left: 10px;
 
 }
+.btnLista{
+    background-color: #3cc7ba;
+    width: 50px;
+    height: 30px;
+    border: 0;
+    color: white;
+    margin-left: 10px;
+}
 div > div {
     display: inline-block;
 }

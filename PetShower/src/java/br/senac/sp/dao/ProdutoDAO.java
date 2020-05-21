@@ -18,7 +18,7 @@ public class ProdutoDAO {
         connection = ConnectionFactory.getConnection();
     }
 
-    public void adicionarProduto(Produto produto) {
+    public void adicionarProduto(Produto produto) throws SQLException {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("INSERT INTO Produto(produto_nome, produto_valor, produto_estoque, produto_dataCadastro)"
@@ -36,7 +36,7 @@ public class ProdutoDAO {
 
     }
 
-    public void deletarProduto(int idProduto) {
+    public void deletarProduto(int idProduto) throws SQLException {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("DELETE FROM Produto WHERE produto_id=?");
@@ -48,7 +48,7 @@ public class ProdutoDAO {
         }
     }
 
-    public void editarProduto(Produto produto) {
+    public void editarProduto(Produto produto) throws SQLException {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("UPDATE Produto SET produto_nome=?, produto_valor, produto_estoque, produto_dataCadastro"
@@ -65,7 +65,7 @@ public class ProdutoDAO {
         }
     }
 
-    public Produto BuscarProdutoId(int idProduto) {
+    public Produto buscarProdutoId(int idProduto)throws SQLException {
         Produto produto = new Produto();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Produto WHERE produto_id=?");
@@ -87,7 +87,7 @@ public class ProdutoDAO {
         return produto;
     }
 
-    public Produto BuscarClienteCpf(String proNome) {
+    public Produto buscarProdutoNome(String proNome) throws SQLException {
         Produto produto = new Produto();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Produto WHERE produto_nome=?");
@@ -108,7 +108,7 @@ public class ProdutoDAO {
         return produto;
     }
 
-    public List<Produto> listarProdutos() {
+    public List<Produto> listarProdutos() throws SQLException {
         List<Produto> listaDeProdutos = new ArrayList<Produto>();
         try {
             Statement stmt = connection.createStatement();

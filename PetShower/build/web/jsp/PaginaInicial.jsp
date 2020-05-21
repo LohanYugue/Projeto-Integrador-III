@@ -27,7 +27,8 @@
                 <nav class="nav">
                     <ul>
                         <li><a href="#produtos-col">Produtos</a></li> 
-                        <li><a href="#section-header">Atendimento</a></li>           
+                        <li><a href="#section-header">Atendimento</a></li>
+                        <li><a href="Relatorio.jsp">Relatório</a></li>
                     </ul>
                 </nav>
             </div>

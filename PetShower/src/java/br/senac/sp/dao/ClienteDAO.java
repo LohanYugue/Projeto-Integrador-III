@@ -18,7 +18,7 @@ public class ClienteDAO {
         connection = ConnectionFactory.getConnection();
     }
 
-    public void adicionarCliente(Cliente cliente) {
+    public void adicionarCliente(Cliente cliente) throws SQLException {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("INSERT INTO Cliente(cli_nome,cli_cpf,cli_dataNascimento,cli_rua,"
@@ -52,7 +52,7 @@ public class ClienteDAO {
         }
     }
 
-    public void editarCliente(Cliente cliente) {
+    public void editarCliente(Cliente cliente) throws SQLException {
         try {
             PreparedStatement preparedStatement = connection
                     .prepareStatement("UPDATE Cliente SET cli_nome=?, cli_cpf=?, cli_dataNascimento=?, cli_endereco=?"
@@ -74,7 +74,7 @@ public class ClienteDAO {
         }
     }
 
-    public Cliente BuscarClienteCpf(String cliCpf) {
+    public Cliente buscarClienteCpf(String cliCpf) throws SQLException {
         Cliente cliente = new Cliente();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Cliente WHERE cli_cpf=?");
@@ -98,11 +98,11 @@ public class ClienteDAO {
         return cliente;
     }
 
-    public Cliente BuscarClienteId(int idCliente) {
+    public Cliente buscarClienteId(int cli_id) throws SQLException {
         Cliente cliente = new Cliente();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Cliente WHERE cli_id=?");
-            preparedStatement.setInt(1, idCliente);
+            preparedStatement.setInt(1, cli_id);
             ResultSet rs = preparedStatement.executeQuery();
 
             if (rs.next()) {
@@ -122,7 +122,7 @@ public class ClienteDAO {
         return cliente;
     }
 
-    public List<Cliente> listarClientes() {
+    public List<Cliente> listarClientes() throws SQLException {
         List<Cliente> listaDeClientes = new ArrayList<Cliente>();
         try {
             Statement stmt = connection.createStatement();
@@ -146,11 +146,11 @@ public class ClienteDAO {
         return listaDeClientes;
     }
 
-    public Cliente getUserById(int CliID) {
+    public Cliente getUserById(int cli_id) throws SQLException {
         Cliente cliente = new Cliente();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement("select * from Cliente where Cli_id=?");
-            preparedStatement.setInt(1, CliID);
+            preparedStatement.setInt(1, cli_id);
             ResultSet rs = preparedStatement.executeQuery();
 
             if (rs.next()) {

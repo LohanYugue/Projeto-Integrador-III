@@ -59,6 +59,8 @@
 
                                 <div>
                                     <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
+                                    
+                                    <a type="button" class="btnLista" href="listarProduto.jsp">Lista de Produtos</a>
 
 
                                 </div>

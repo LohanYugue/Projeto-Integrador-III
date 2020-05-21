@@ -70,7 +70,8 @@ public final class PaginaInicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("                <nav class=\"nav\">\r\n");
       out.write("                    <ul>\r\n");
       out.write("                        <li><a href=\"#produtos-col\">Produtos</a></li> \r\n");
-      out.write("                        <li><a href=\"#section-header\">Atendimento</a></li>           \r\n");
+      out.write("                        <li><a href=\"#section-header\">Atendimento</a></li>\r\n");
+      out.write("                        <li><a href=\"Relatorio.jsp\">Relatório</a></li>\r\n");
       out.write("                    </ul>\r\n");
       out.write("                </nav>\r\n");
       out.write("            </div>\r\n");

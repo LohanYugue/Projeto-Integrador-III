@@ -30,7 +30,7 @@
 
         <fieldset class="fieldset ">
             <div class="tabela">
-                <center><h1>Lista de Clientes</h1></center> 
+                <h1>Lista de Clientes</h1>
                 <table border=1>
                     <thead>
                         <tr class="tr">
@@ -55,8 +55,8 @@
                                 <td><c:out value="${cliente.cliCidade}" /></td>
                                 <td><c:out value="${cliente.cliUf}" /></td>
                                 <td><c:out value="${cliente.cliTelefone}" /></td>
-                                <td><a href="CadastroCliente?action=Update&cli_id=<c:out value="${cliente.cli_id}"/>">Update</a></td>
-                                <td><a href="CadastroCliente?action=Delete&cli_id=<c:out value="${cliente.cli_id}"/>">Delete</a></td>
+                                <td><a href="${pageContext.request.contextPath}/EditarCliente?cli_id=<c:out value="${cliente.cli_id}"/>">Editar</a></td>
+                                <td><a href="${pageContext.request.contextPath}/DeletarCliente?cli_id=<c:out value="${cliente.cli_id}"/>">Deletar</a></td>
                             </tr>
                         </c:forEach>
                     </tbody>

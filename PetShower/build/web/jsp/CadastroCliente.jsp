@@ -41,7 +41,7 @@
 
         <!-- start form -->
         <main>
-            <form method="POST" action='CadastroCliente' name="frmAddUser" >
+            <form method="POST" action="${pageContext.request.contextPath}/CadastroCliente" >
                 <fieldset class="fieldset">
                     <h1><center>Cadastro Clientes</center></h1>
 
@@ -94,6 +94,8 @@
                         <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
 
                         <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
+                        
+                        <a type="button" class="btnLista" href="listarCliente.jsp">Lista de Clientes</a>
 
                     </div>
                 </fieldset>

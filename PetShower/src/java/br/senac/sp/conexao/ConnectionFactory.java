@@ -16,7 +16,7 @@ public class ConnectionFactory {
             String user = "root";
             String senha = "";
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PI_PetShower", user, senha);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3307/Pi_PetShower", user, senha);
             status = "Connection opened";
 
         } catch (SQLException e) {
