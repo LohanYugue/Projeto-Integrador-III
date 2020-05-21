@@ -54,6 +54,9 @@
                     </c:forEach>
                     </tbody>
                 </table>
+                        <div>
+                             <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
+                        </div>
             </div>
         </fieldset>
     </body>

@@ -25,49 +25,36 @@
         </header>
         <!-- end /header -->
         <main>
-            <form>
+            <form method="POST" action="${pageContext.request.contextPath}/CadastroProduto">
                 <fieldset class="fieldset">
-                    <h1><center>Cadastro Produtos</center></h1>
-
-                    <div class="form-group">
-                        <label for="nome">Nome:</label>
-                        <input type="text"  maxlength="25" class="form-control" placeholder="Insira o nome do produto" id="nome" name="cliNome">
+                    <h1><center>Cadastro de Produtos</center></h1>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="idProduto">ID Produto:</label>
+                            <input type="number" class="form-control" id="inputId" placeholder="ID" disabled>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nomePro">Nome:</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                        </div>
                     </div>
-
                     <div class="form-group">
-                        <label for="nome">Valor:</label>
-                        <input type="number"  maxlength="25" class="form-control" placeholder="Insira o nome do produto" id="nome" name="cliNome">
+                        <label for="valorPro">Valor:</label>
+                        <input type="text" class="form-control" id="inputValor" placeholder="R$">
                     </div>
-
-
                     <div class="form-group">
-                        <label for="quantidade">Quantidade:</label>
-                        <input type="number" class="form-control" id="estoque" name="proEstoque">
+                        <label for="quantPro">Quantidade</label>
+                        <input type="number" class="form-control" id="inputQtd" placeholder="Quantidade">
                     </div>
-
-                    <div class="form-group">
-                        <label for="data">Data:</label>
-                        <input type="date" class="form-control" id="data" name="proDataCadastro">
-                    </div>
-
                     <div>
-                        <div>
-                            <button type="submit" class="btnSalvar">Salvar</button>
+                    <button type="submit" class="btnSalvar">Salvar</button>
+                    
+                    <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
 
-                            <div>
-                                <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
-
-                                <div>
-                                    <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
-                                    
-                                    <a type="button" class="btnLista" href="listarProduto.jsp">Lista de Produtos</a>
-
-
-                                </div>
-
-
-                                </fieldset>
-                                </form>
-                                </main>
-                                </body>
-                                </html> 
+                    <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
+                    
+                </fieldset>
+            </form>
+        </main>
+    </body>
+</html> 

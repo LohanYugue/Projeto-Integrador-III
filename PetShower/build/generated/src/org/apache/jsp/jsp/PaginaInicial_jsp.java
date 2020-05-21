@@ -72,6 +72,14 @@ public final class PaginaInicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("                        <li><a href=\"#produtos-col\">Produtos</a></li> \r\n");
       out.write("                        <li><a href=\"#section-header\">Atendimento</a></li>\r\n");
       out.write("                        <li><a href=\"Relatorio.jsp\">Relatório</a></li>\r\n");
+      out.write("                        <li class=\"itemdropdown\">\r\n");
+      out.write("                            <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n");
+      out.write("                                Consultas\r\n");
+      out.write("                            </a>\r\n");
+      out.write("                            <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\r\n");
+      out.write("                                <a class=\"dropdown-item\" href=\"listarCliente.jsp\">Cliente</a>\r\n");
+      out.write("                                <a class=\"dropdown-item\" href=\"listarProduto.jsp\">Produto</a>\r\n");
+      out.write("                            </div>\r\n");
       out.write("                    </ul>\r\n");
       out.write("                </nav>\r\n");
       out.write("            </div>\r\n");
