@@ -282,10 +282,6 @@
         <footer class="footer">
             <div class="content">
                 <div class="footer-col">
-                    <h1>Sobre a empresa</h1>
-                    <p>Primeiramente, Agradecer o professor por nos deixar com um tempo a mais para realizar o termino do projeto. Projeto realizado apenas por Edson e Isadora, pois todos os outros integrantes do grupo desisitiram do projeto ou do curso.</p>
-                </div>
-                <div class="footer-col">
                     <h1>Links Úteis</h1>
                     <ul class="footer-col-links">
                         <li><a href="https://github.com/LohanYugue/Projeto-Integrador-III/tree/master/PetShower/web/jsp">GitHub</a></li>
@@ -307,10 +303,5 @@
         </footer>
 
         <!-- end footer -->
-
-
-
-
-
     </body>
 </html>

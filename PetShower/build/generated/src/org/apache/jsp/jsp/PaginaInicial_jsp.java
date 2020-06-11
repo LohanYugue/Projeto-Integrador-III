@@ -325,10 +325,6 @@ public final class PaginaInicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("        <footer class=\"footer\">\r\n");
       out.write("            <div class=\"content\">\r\n");
       out.write("                <div class=\"footer-col\">\r\n");
-      out.write("                    <h1>Sobre a empresa</h1>\r\n");
-      out.write("                    <p>Primeiramente, Agradecer o professor por nos deixar com um tempo a mais para realizar o termino do projeto. Projeto realizado apenas por Edson e Isadora, pois todos os outros integrantes do grupo desisitiram do projeto ou do curso.</p>\r\n");
-      out.write("                </div>\r\n");
-      out.write("                <div class=\"footer-col\">\r\n");
       out.write("                    <h1>Links Úteis</h1>\r\n");
       out.write("                    <ul class=\"footer-col-links\">\r\n");
       out.write("                        <li><a href=\"https://github.com/LohanYugue/Projeto-Integrador-III/tree/master/PetShower/web/jsp\">GitHub</a></li>\r\n");
@@ -350,11 +346,6 @@ public final class PaginaInicial_jsp extends org.apache.jasper.runtime.HttpJspBa
       out.write("        </footer>\r\n");
       out.write("\r\n");
       out.write("        <!-- end footer -->\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");
     } catch (Throwable t) {

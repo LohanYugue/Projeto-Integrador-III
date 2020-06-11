@@ -29,7 +29,7 @@
         <!-- start form -->
         <fieldset class="fieldset-login ">
             <h1><center>Login</center></h1>
-            <form action="Logint">
+            <form  name="formL" action="<%=request.getContextPath()%>/login" method="POST">
 
                 <div class="form-group" >
                     <center>
@@ -45,9 +45,7 @@
                 </div>
                 <div>
                     <center>
-                        <button type="submit" class="btnSalvar">Salvar</button>
-                        <button type="reset" value="Reset" class="btnLimpar">Limpar</button>
-                        <input type="button" value="Voltar" class="btnVoltar" onClick="history.go(-1)">
+                        <button type="submit" class="btnSalvar">Entrar</button>
                     </center>
                 </div>
             </form>

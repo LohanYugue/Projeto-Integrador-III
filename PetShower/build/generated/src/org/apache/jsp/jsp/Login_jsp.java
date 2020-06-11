@@ -72,7 +72,7 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <!-- start form -->\r\n");
       out.write("        <fieldset class=\"fieldset-login \">\r\n");
       out.write("            <h1><center>Login</center></h1>\r\n");
-      out.write("            <form action=\"Logint\">\r\n");
+      out.write("            <form  name=\"formL\" action=\"Autenticacao\" method=\"POST\">\r\n");
       out.write("\r\n");
       out.write("                <div class=\"form-group\" >\r\n");
       out.write("                    <center>\r\n");
@@ -90,7 +90,6 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    <center>\r\n");
       out.write("                        <button type=\"submit\" class=\"btnSalvar\">Salvar</button>\r\n");
       out.write("                        <button type=\"reset\" value=\"Reset\" class=\"btnLimpar\">Limpar</button>\r\n");
-      out.write("                        <input type=\"button\" value=\"Voltar\" class=\"btnVoltar\" onClick=\"history.go(-1)\">\r\n");
       out.write("                    </center>\r\n");
       out.write("                </div>\r\n");
       out.write("            </form>\r\n");
